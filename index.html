@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Bootstrap</title>
+    <link rel="stylesheet" href="index.css" class="css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
+    <link href="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg nav-style ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Navbar</a>
+            <button class="navbar-toggler btn-custom" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./form.html" class="nav-link" href="#">Form</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOIQ6cIVzJaK-dqqNiLSBE-2gguvr3Zao1A&usqp=CAU"
+                    alt="Los Angeles">
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zbe-hcHSIYt8hp96snQYmonc0xngp5aIKg&usqp=CAU"
+                    alt="Chicago">
+            </div>
+            <div class="carousel-item">
+                <img src="ny.jpg" alt="New York">
+            </div>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOIQ6cIVzJaK-dqqNiLSBE-2gguvr3Zao1A&usqp=CAU" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+    <h1 class=" bg-secondary bg-gradient text-light">Una simple pagina de bootstrap</h1>
+
+    <p class="lead">Aqui va el contenido en un container fluid con clase lead.</p>
+
+    <div class="container">
+        <h1>Título Secundario</h1>
+        <p>Aquí va el contenido.</p>
+    </div>
+
+    <div class="container-fluid bkg-ejemplo">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum repellendus nam minima provident
+            esse iste, illo dolorum dicta eligendi dolores qui magni architecto eum harum, temporibus libero cupiditate
+            eos.
+            Error sint ipsa officia! Reiciendis, laborum. Dolores, error repellendus? Beatae at dolores enim consectetur
+            ipsum similique magnam commodi aliquid, nihil ullam, rem dolor ea quia excepturi vero eaque atque aut!
+            Voluptas itaque excepturi numquam soluta eaque fuga fugiat eveniet et totam qui minima quod nihil aliquam,
+            dolorum dolores nobis ipsam expedita placeat. Cum quia, hic nesciunt fugiat laboriosam accusantium! Animi.
+            Vero maxime illo eos reiciendis doloremque praesentium facere laborum consectetur animi ab? Illum eum magni,
+            atque quam quis, ipsam maiores fugit dolorum aspernatur sint provident repudiandae dolor similique ex?
+            Aliquid!
+            Nihil labore quaerat quis, sed suscipit atque, qui exercitationem impedit temporibus ipsa vero mollitia
+            blanditiis dicta voluptatum totam! Accusantium odio sunt dolorum quos sit, commodi enim aspernatur eum fuga
+            voluptate!
+            Provident nihil repellat asperiores voluptatem soluta quisquam, deserunt commodi. Cumque, consectetur sint
+            blanditiis voluptates repudiandae ullam? Ab aliquam pariatur omnis totam, fugiat atque, sequi quaerat magnam
+            neque autem laborum porro?
+            Esse vero saepe blanditiis impedit a, minima dolore, assumenda, at harum corrupti maxime aut reiciendis.
+            Quia vel rem, labore aliquam possimus impedit amet, error ea architecto debitis officiis et velit.
+            Provident vel aspernatur magni ipsam, reiciendis cum quas sit tenetur, vero aliquam aut quasi fugiat iste
+            obcaecati repudiandae mollitia! Odit optio voluptatem at ratione commodi assumenda, deserunt aliquid
+            doloribus vitae!
+            Exercitationem facere tempora sint doloribus beatae, hic esse laudantium amet enim in quidem ab aliquid
+            nostrum! Sit cum culpa nisi quos voluptas, qui, nesciunt eligendi nulla enim dignissimos non vitae?
+            Commodi unde iste labore aut dolorum veritatis aliquid similique animi, corrupti quos repellendus quam dicta
+            provident ratione necessitatibus soluta modi aperiam consequuntur porro libero? Esse assumenda deserunt
+            soluta nobis nisi.</p>
+
+    </div>
+
+    <div class="container bkg-ejemplo">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum repellendus nam minima provident
+            esse iste, illo dolorum dicta eligendi dolores qui magni architecto eum harum, temporibus libero cupiditate
+            eos.
+            Error sint ipsa officia! Reiciendis, laborum. Dolores, error repellendus? Beatae at dolores enim consectetur
+            ipsum similique magnam commodi aliquid, nihil ullam, rem dolor ea quia excepturi vero eaque atque aut!
+            Voluptas itaque excepturi numquam soluta eaque fuga fugiat eveniet et totam qui minima quod nihil aliquam,
+            dolorum dolores nobis ipsam expedita placeat. Cum quia, hic nesciunt fugiat laboriosam accusantium! Animi.
+            Vero maxime illo eos reiciendis doloremque praesentium facere laborum consectetur animi ab? Illum eum magni,
+            atque quam quis, ipsam maiores fugit dolorum aspernatur sint provident repudiandae dolor similique ex?
+            Aliquid!
+            Nihil labore quaerat quis, sed suscipit atque, qui exercitationem impedit temporibus ipsa vero mollitia
+            blanditiis dicta voluptatum totam! Accusantium odio sunt dolorum quos sit, commodi enim aspernatur eum fuga
+            voluptate!
+            Provident nihil repellat asperiores voluptatem soluta quisquam, deserunt commodi. Cumque, consectetur sint
+            blanditiis voluptates repudiandae ullam? Ab aliquam pariatur omnis totam, fugiat atque, sequi quaerat magnam
+            neque autem laborum porro?
+            Esse vero saepe blanditiis impedit a, minima dolore, assumenda, at harum corrupti maxime aut reiciendis.
+            Quia vel rem, labore aliquam possimus impedit amet, error ea architecto debitis officiis et velit.
+            Provident vel aspernatur magni ipsam, reiciendis cum quas sit tenetur, vero aliquam aut quasi fugiat iste
+            obcaecati repudiandae mollitia! Odit optio voluptatem at ratione commodi assumenda, deserunt aliquid
+            doloribus vitae!
+            Exercitationem facere tempora sint doloribus beatae, hic esse laudantium amet enim in quidem ab aliquid
+            nostrum! Sit cum culpa nisi quos voluptas, qui, nesciunt eligendi nulla enim dignissimos non vitae?
+            Commodi unde iste labore aut dolorum veritatis aliquid similique animi, corrupti quos repellendus quam dicta
+            provident ratione necessitatibus soluta modi aperiam consequuntur porro libero? Esse assumenda deserunt
+            soluta nobis nisi.</p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/js/bootstrap.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
